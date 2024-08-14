@@ -24,9 +24,13 @@ body {
 
 /* header */
 header {
-    background-color: rgb(136, 142, 45);
+    background-color: rgb(136, 142, 45);    
+}
+
+header>h1 {
     font-family: "ubuntu", sans-serif;
-    font-size: xx-large;
+    font-size: 75px;
+    padding: 8px;
 }
 
 /* Main */
