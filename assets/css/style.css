@@ -35,7 +35,7 @@ header>h1 {
 
 /* Main */
 main {
-    background-color: aquamarine;
+    
     /* to push the footer top the bottom of the page */
     flex: 1 0 auto;
 
