@@ -1,19 +1,41 @@
-
+/* Wildcard selector to override the defult browser setting */
 * {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
+
+}
+
+/* Default styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* basic project styles */
+    color: black;
+
 }
 
 
+
+
+/* header */
 header {
-    background-color: lightblue;
+    background-color: rgb(136, 142, 45);
+
 }
 
+/* Main */
 main {
     background-color: aquamarine;
+    /* to push the footer top the bottom of the page */
+    flex: 1 0 auto;
+
+
 }
 
+/* Footer */
 footer {
     background-color: lightsalmon;
 }
