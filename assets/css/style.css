@@ -57,7 +57,26 @@ main {
 #middle-content {
     max-width: 90%;
     text-align: center;
+    margin-top: 10px;
     }
+#reasons {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: justify;
+    line-height: 15px;    
+}
+
+#reasons div {
+    margin-top: 10px;
+
+}
+
+#reasons h3 {
+    font-size: 15px;
+}
+#reasons p {
+    font-size: 10px;
+}
 
 /* Footer */
 footer {
