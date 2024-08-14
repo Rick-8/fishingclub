@@ -81,10 +81,11 @@ main {
 /* Footer */
 #social-media {
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+    font-size: 20px;
 }
 footer {
     background-color: rgb(136, 142, 45);
