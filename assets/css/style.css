@@ -79,6 +79,14 @@ main {
 }
 
 /* Footer */
+#social-media {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
 footer {
-    background-color: rgb(40, 75, 99);
+    background-color: rgb(136, 142, 45);
+    
 }
