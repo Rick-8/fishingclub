@@ -50,10 +50,12 @@ nav {
 /* Menu Toggle */
 #nav-menu:checked~nav {
     display: block;
+    
 }
 
 #nav-menu {
     display: none;
+    font-size: 20px;
 }
 
 /* Main */
