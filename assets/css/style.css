@@ -32,18 +32,20 @@ header {
     height: auto;
 }
 
+header>h1 {
+    font-family: "ubuntu", sans-serif;
+    font-size: 75px;
+    padding: 2px;
+    padding-left: 2px;
+}
+
 header,
 a {
     text-decoration: none;
     color: inherit;
 }
 
-header>h1 {
-    font-family: "ubuntu", sans-serif;
-    font-size: 190%;
-    padding: 8px;
-    padding-left: 20px;
-}
+
 
 #options {
     font-size: 110%;
@@ -67,7 +69,7 @@ nav {
     box-shadow: 0 2px 2px;
     display: none;
     top: 100%;
-    
+
 }
 
 /* Menu Toggle */
@@ -76,9 +78,8 @@ nav {
 }
 
 #title {
-    font-size: 280%;
+    font-size: 200%;
     line-height: 75px;
-    margin: 0 0.5rem;
 }
 
 #nav-menu {
@@ -177,7 +178,7 @@ footer {
 @media screen and (min-width: 768px) {
 
     /* Header */
-    
+
     nav {
         display: block;
         position: relative;
@@ -186,18 +187,38 @@ footer {
         padding-right: 1rem;
     }
 
-   
+
 
     #options>li {
         padding-left: 1rem;
         display: inline;
     }
+
     #options>li:hover {
         color: rgb(136, 142, 45);
         background-color: rgb(40, 75, 99);
     }
-.nav-menu-label {
-    display: none;
-}
-   
-}
+
+    .nav-menu-label {
+        display: none;
+    }
+    #free-unwind,
+    #relax-catch-fish {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #free-unwind,
+    #relax-catch-fish {
+        width: auto;
+    }
+
+    #relax-catch-fish>div {
+        text-align: end;
+        align-items: self-end;
+    }
+    #middle-content {
+        font-size: 160%;
+    }
+ 
