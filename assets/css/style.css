@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    letter-spacing: 2px;
 
 }
 
@@ -148,6 +149,7 @@ main {
     margin: 5px 0;
 }
 
+
 #circle-man-fish {
     height: 80vw;
     width: 80vw;
@@ -162,19 +164,18 @@ main {
 }
 
 #places-to-fish {
-background: url(../images/Fishing-off-jetty.jpg) no-repeat center / cover;
-display: 
-flex-wrap: 
+    background: url(../images/Fishing-off-jetty.jpg) no-repeat center / cover;
+    display:
+        flex-wrap:
 }
+
 #places-to-fish div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
-    /* This will not wrap on screens of less than 400px wide. Each Div will expand to fill the available space on its row */
     flex-basis: 200px;
     flex-grow: 1;
-    /* Creates a grid of meetup time divs over the background image */
     border: 2px solid white;
 }
 
@@ -223,6 +224,14 @@ footer {
     .nav-menu-label {
         display: none;
     }
+    #ul-reasons h3 {
+        font-size: 20px;
+    }
+
+    #ul-reasons p {
+        font-size: 15px;
+    }
+
     #free-unwind,
     #relax-catch-fish {
         display: flex;
@@ -239,9 +248,11 @@ footer {
         text-align: end;
         align-items: self-end;
     }
+
     #middle-content {
         font-size: 160%;
     }
+
     main {
         /*push main content down to accommodae larger header */
         margin-top: 79px;
