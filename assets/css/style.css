@@ -5,8 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: 2px;
-
 }
 
 /* Default styles */
@@ -17,6 +15,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* basic project styles */
     color: black;
+
+
 }
 
 .hidden-title {
@@ -40,7 +40,7 @@ header {
 header>h1 {
     font-family: "ubuntu", sans-serif;
     font-size: 75px;
-    padding: 2px;
+    padding: 1px;
     padding-left: 2px;
 }
 
@@ -165,8 +165,9 @@ main {
 
 #places-to-fish {
     background: url(../images/Fishing-off-jetty.jpg) no-repeat center / cover;
-    display:
-        flex-wrap:
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 #places-to-fish div {
@@ -207,6 +208,7 @@ footer {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
+        letter-spacing: 2px;
     }
 
 
@@ -214,47 +216,60 @@ footer {
     #options>li {
         padding-left: 1rem;
         display: inline;
+        letter-spacing: 2px;
     }
 
     #options>li:hover {
         color: rgb(136, 142, 45);
         background-color: rgb(40, 75, 99);
+        letter-spacing: 2px;
     }
 
     .nav-menu-label {
         display: none;
     }
+
     #ul-reasons h3 {
         font-size: 20px;
+        letter-spacing: 2px;             
     }
 
-    #ul-reasons p {
-        font-size: 15px;
-    }
+        #ul-reasons p {
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
 
-    #free-unwind,
-    #relax-catch-fish {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+        #ul-reasons, hr {
+            margin-bottom: 2px;
+        }
 
-    #free-unwind,
-    #relax-catch-fish {
-        width: auto;
-    }
+        #free-unwind,
+        #relax-catch-fish {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
 
-    #relax-catch-fish>div {
-        text-align: end;
-        align-items: self-end;
-    }
+        #free-unwind,
+        #relax-catch-fish {
+            width: auto;
+        }
 
-    #middle-content {
-        font-size: 160%;
-    }
+        #relax-catch-fish>div {
+            text-align: end;
+            align-items: start-end;
+        }
 
-    main {
-        /*push main content down to accommodae larger header */
-        margin-top: 79px;
+        #middle-content {
+            font-size: 160%;
+        }
+
+        #fishing-locations {
+            flex
+        }
+
+        main {
+            /*push main content down to accommodae larger header */
+            margin-to: 79px;
+        }
     }
-}
