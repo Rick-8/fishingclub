@@ -191,7 +191,10 @@ footer {
     #options>li {
         padding-left: 1rem;
         display: inline;
-
+    }
+    #options>li:hover {
+        color: rgb(136, 142, 45);
+        background-color: rgb(40, 75, 99);
     }
 .nav-menu-label {
     display: none;
