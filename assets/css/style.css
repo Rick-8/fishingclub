@@ -27,6 +27,15 @@ header {
     justify-content: space-between;
     align-items: baseline;
     z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: auto;
+}
+
+header,
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 header>h1 {
@@ -34,6 +43,18 @@ header>h1 {
     font-size: 190%;
     padding: 8px;
     padding-left: 20px;
+}
+
+#options {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+
+}
+
+#options>li {
+    margin-bottom: 1em;
+
 }
 
 /* Navbar styling with menu */
@@ -45,13 +66,19 @@ nav {
     left: 0;
     box-shadow: 0 2px 2px;
     display: none;
-    top: 5vh;
+    top: 100%;
+    
 }
 
 /* Menu Toggle */
 #nav-menu:checked~nav {
     display: block;
+}
 
+#title {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
 }
 
 #nav-menu {
@@ -91,27 +118,27 @@ main {
     margin-right: auto;
 }
 
-#reasons {
+#ul-reasons {
     margin-top: 20px;
     padding: 20px;
     text-align: justify;
     line-height: 15px;
 }
 
-#reasons div {
+#ul-reasons div {
     margin-top: 10px;
 
 }
 
-#reasons h3 {
+#ul-reasons h3 {
     font-size: 15px;
 }
 
-#reasons p {
+#ul-reasons p {
     font-size: 10px;
 }
 
-#reasons-hr {
+#ul-reasons hr {
     max-width: 99%;
     margin: 5px 0;
 }
@@ -146,18 +173,11 @@ footer {
     background-color: rgb(136, 142, 45);
 }
 
-/* media query for large or landscape phones */
-@media screen and (min-width: 576px) {
-    #photos {
-        column-count: 2;
-        column-gap: 0;
-    }
-}
-
-/* media query: tablets and larger (768 and up) */
+/* Media Query for Tablets and larger */
 @media screen and (min-width: 768px) {
 
     /* Header */
+    
     nav {
         display: block;
         position: relative;
@@ -166,77 +186,15 @@ footer {
         padding-right: 1rem;
     }
 
-    #menu {
-        display: flex;
-    }
+   
 
-    #menu>li {
+    #options>li {
         padding-left: 1rem;
+        display: inline;
+
     }
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
-
-    #benefits-physical,
-    #benefits-mental {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #benefits-physical,
-    #benefits-mental {
-        width: 75%;
-    }
-
-    #benefits-mental>div {
-        text-align: end;
-        align-self: flex-end;
-    }
-
-    /*main content */
-    main {
-        /*push main content down to accommodae larger header */
-        margin-top: 79px;
-    }
-
-    #cover-text {
-        width: 300px;
-        right: 50px;
-    }
-
-    #photos {
-        column-count: 3;
-    }
-
-    /* Form */
-    #signup {
-        background-position: center;
-        position: relative;
-    }
-
-    #signup-form {
-        max-width: 400px;
-        position: absolute;
-        left: 10%;
-        top: 150px;
-    }
-
-    .text-input:hover {
-        border-color: #f16c6b;
-    }
-
-    .join-button:hover {
-        background-color: #fafafa;
-        color: #454b1b;
-    }
-
-
+.nav-menu-label {
+    display: none;
+}
+   
 }
