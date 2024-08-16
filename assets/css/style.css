@@ -47,10 +47,11 @@ nav {
     display: none;
     top: 5vh;
 }
+
 /* Menu Toggle */
 #nav-menu:checked~nav {
     display: block;
-    
+
 }
 
 #nav-menu {
@@ -114,16 +115,16 @@ main {
 }
 
 #circle-man-fish {
-height: 90vw;
-width: 90vw;
-background: url("../images/man-carp.jpg") no-repeat top center / cover;
-margin-bottom: 20px;
-/* this makes it a circle */
-border-radius: 50%;
-max-width: 300px;
-max-height: 300px;
-margin-left: auto;
-margin-right: auto;
+    height: 80vw;
+    width: 80vw;
+    background: url("../images/man-carp.jpg") no-repeat top center / cover;
+    margin-bottom: 20px;
+    /* to make it a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Footer */
@@ -135,6 +136,8 @@ margin-right: auto;
     justify-content: space-evenly;
     list-style-type: none;
     font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
