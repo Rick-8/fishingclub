@@ -235,7 +235,7 @@ footer {
         letter-spacing: 2px;
     }
 
-  
+
     .nav-menu-label {
         display: none;
     }
@@ -285,13 +285,23 @@ footer {
             letter-spacing: 2px;
             padding: 5px;
         }
-    
+
         a:hover {
             color: rgb(136, 142, 45);
             background-color: rgb(40, 75, 99);
             padding: 5px;
         }
+
+       
+
+
+        header, h1 {
+            font-family: "ubuntu", sans-serif;
+            font-size: 1.2vw;
+            padding-left: 2px;
+            justify-content: space-between;
+        }
     }
-
-
 }
+
+
