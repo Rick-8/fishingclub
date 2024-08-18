@@ -15,8 +15,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* basic project styles */
     color: black;
-
-
+    background-color: rgb(40, 75, 99);
+    font-size: 100%;
 }
 
 .hidden-title {
@@ -37,11 +37,13 @@ header {
     height: auto;
 }
 
-header>h1 {
+/* Header styling */
+header,
+h1 {
     font-family: "ubuntu", sans-serif;
-    font-size: 75px;
-    padding: 1px;
+    font-size: 5vw;
     padding-left: 2px;
+    justify-content: space-between;
 }
 
 header,
@@ -122,6 +124,8 @@ main {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    color: #D1462F;
+    text-transform: uppercase;
 }
 
 #ul-reasons {
@@ -138,15 +142,18 @@ main {
 
 #ul-reasons h3 {
     font-size: 15px;
+    color: #D1462F;
 }
 
 #ul-reasons p {
     font-size: 10px;
+    color: white;
 }
 
 #ul-reasons hr {
     max-width: 99%;
     margin: 5px 0;
+    border-color: #888e2d;
 }
 
 
@@ -167,17 +174,21 @@ main {
     background: url(../images/Fishing-off-jetty.jpg) no-repeat center / cover;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 #places-to-fish div {
-    color: #fafafa;
+    color: #888e2d;
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
     flex-basis: 200px;
     flex-grow: 1;
-    border: 2px solid white;
+    border: 2px solid #D1462F;
+}
+
+#places-to-fish div p {
+    color: white;
 }
 
 /* Footer */
@@ -211,6 +222,11 @@ footer {
         letter-spacing: 2px;
     }
 
+    header,
+    h1 {
+        font-size: 3vw;
+    }
+
 
 
     #options>li {
@@ -219,57 +235,63 @@ footer {
         letter-spacing: 2px;
     }
 
-    #options>li:hover {
-        color: rgb(136, 142, 45);
-        background-color: rgb(40, 75, 99);
-        letter-spacing: 2px;
-    }
-
+  
     .nav-menu-label {
         display: none;
     }
 
     #ul-reasons h3 {
         font-size: 20px;
-        letter-spacing: 2px;             
+        letter-spacing: 2px;
     }
 
-        #ul-reasons p {
-            font-size: 15px;
-            letter-spacing: 1px;
-        }
+    #ul-reasons p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
 
-        #ul-reasons, hr {
-            margin-bottom: 2px;
-        }
+    #ul-reasons,
+    hr {
+        margin-bottom: 2px;
+    }
 
-        #free-unwind,
-        #relax-catch-fish {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
+    #free-unwind,
+    #relax-catch-fish {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-        #free-unwind,
-        #relax-catch-fish {
-            width: auto;
-        }
+    #free-unwind,
+    #relax-catch-fish {
+        width: auto;
+    }
 
-        #relax-catch-fish>div {
-            text-align: end;
-            align-items: start-end;
-        }
+    #relax-catch-fish>div {
+        text-align: end;
+        align-items: start-end;
+    }
 
-        #middle-content {
-            font-size: 160%;
-        }
+    #middle-content {
+        font-size: 160%;
+    }
 
-        #fishing-locations {
-            flex
-        }
+    /* Media Quiery for laptops and Desktops, over 992px */
+    @media screen and (min-width: 992px) {
 
-        main {
-            /*push main content down to accommodae larger header */
-            margin-to: 79px;
+        #options>li:hover {
+            color: rgb(136, 142, 45);
+            background-color: rgb(40, 75, 99);
+            letter-spacing: 2px;
+            padding: 5px;
+        }
+    
+        a:hover {
+            color: rgb(136, 142, 45);
+            background-color: rgb(40, 75, 99);
+            padding: 5px;
         }
     }
+
+
+}
