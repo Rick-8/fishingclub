@@ -41,7 +41,7 @@ header {
 header,
 h1 {
     font-family: "ubuntu", sans-serif;
-    font-size: 5vw;
+    font-size: 6vw;
     padding-left: 2px;
     justify-content: space-between;
 }
@@ -129,16 +129,13 @@ main {
 }
 
 #ul-reasons {
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 20px;
     text-align: justify;
     line-height: 15px;
 }
 
-#ul-reasons div {
-    margin-top: 10px;
 
-}
 
 #ul-reasons h3 {
     font-size: 15px;
@@ -151,30 +148,28 @@ main {
 }
 
 #ul-reasons hr {
-    max-width: 99%;
-    margin: 5px 0;
+    margin: 2px 0;
     border-color: #888e2d;
 }
 
-
 #circle-man-fish {
-    height: 80vw;
-    width: 80vw;
-    background: url("../images/man-carp.jpg") no-repeat top center / cover;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    background: url("../images/mancarp2.jpg") no-repeat top center / cover;
     margin-bottom: 20px;
     /* to make it a circle */
     border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    
+    
 }
 
 #places-to-fish {
-    background: url(../images/Fishing-off-jetty.jpg) no-repeat center / cover;
+    background: url(../images/fishingOffJetty.jpg) no-repeat center / cover;
     display: flex;
+    max-width: auto;
     flex-wrap: wrap;
-
 }
 
 #places-to-fish div {
@@ -227,8 +222,6 @@ footer {
         font-size: 3vw;
     }
 
-
-
     #options>li {
         padding-left: 1rem;
         display: inline;
@@ -239,37 +232,38 @@ footer {
     .nav-menu-label {
         display: none;
     }
-
+   
     #ul-reasons h3 {
         font-size: 20px;
-        letter-spacing: 2px;
+        
     }
 
-    #ul-reasons p {
+    #ul-reasons- p {
         font-size: 15px;
-        letter-spacing: 1px;
+        
+    }  
+
+    #desktop-position  {
+        display: flex;
+        flex-direction: row;
     }
 
-    #ul-reasons,
-    hr {
-        margin-bottom: 2px;
-    }
-
-    #free-unwind,
+    #free-unwind-,
     #relax-catch-fish {
         display: flex;
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row;
+        max-width: auto;
     }
 
-    #free-unwind,
+    #free-unwind {
+        text-align: left;
+        align-items: flex-start;
+
+    }
+
     #relax-catch-fish {
-        width: auto;
-    }
-
-    #relax-catch-fish>div {
-        text-align: end;
-        align-items: start-end;
+        text-align: right;
+        align-items: flex-end;
     }
 
     #middle-content {
@@ -292,16 +286,40 @@ footer {
             padding: 5px;
         }
 
-       
 
+    }
 
-        header, h1 {
-            font-family: "ubuntu", sans-serif;
-            font-size: 1.2vw;
-            padding-left: 2px;
-            justify-content: space-between;
+    /* flexbox properties to style the reasons section at 1200px or over*/
+    @media screen and (min-width: 1200px) {
+
+        header,
+        h1 {
+            font-size: 1.4vw;
         }
+
+        #middle-content-section {
+            margin-top: 6%;
+            margin-bottom: 6%;
+            
+        }
+
+        #desktop-position {
+            display: flex;
+            flex-direction: row;
+         }   
+
+        #relax-catch-fish {
+            order: 1;
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }
-
-
