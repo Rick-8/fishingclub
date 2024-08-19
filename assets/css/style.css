@@ -27,6 +27,9 @@ body {
 .hidden-title {
     display: none;
 }
+.hidden-heading {
+    display: none;
+}
 
 /* Header */
 header {
@@ -120,6 +123,7 @@ main {
     .nav-menu-label {
         display: none;
     }
+
     #options {
         display: flex;
         align-items: baseline;
@@ -127,11 +131,11 @@ main {
         padding: 1rem 1rem;
         margin: 0;
         gap: 1rem;
-        
+
     }
 }
 
-/* Additional Styling for Content and Footer (as per your original design) */
+/* Additional Styling for Content and Footer */
 #main {
     background: url(../images/lake-with-boats.jpeg) no-repeat center center/cover;
     width: 100%;
@@ -234,6 +238,10 @@ main {
 
 footer {
     background-color: rgb(136, 142, 45);
+}
+
+footer a {
+    color: black;
 }
 
 /* Hover effects for larger screens */
