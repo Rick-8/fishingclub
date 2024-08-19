@@ -19,6 +19,12 @@ body {
     font-size: 100%;
 }
 
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .hidden-title {
     display: none;
 }
@@ -32,7 +38,6 @@ header {
     justify-content: space-between;
     align-items: baseline;
     z-index: 99;
-    position: fixed;
     width: 100%;
     height: auto;
 }
@@ -41,8 +46,8 @@ header {
 header,
 h1 {
     font-family: "ubuntu", sans-serif;
-    font-size: 6vw;
-    padding-left: 2px;
+    font-size: 2.3rem;
+    padding: 0.7rem 0.1rem;
     justify-content: space-between;
 }
 
@@ -52,18 +57,14 @@ a {
     color: inherit;
 }
 
-
-
 #options {
-    font-size: 110%;
+    font-size: 2rem;
     letter-spacing: 4px;
     list-style-type: none;
-
 }
 
 #options>li {
     margin-bottom: 1em;
-
 }
 
 /* Navbar styling with menu */
@@ -76,7 +77,10 @@ nav {
     box-shadow: 0 2px 2px;
     display: none;
     top: 100%;
+}
 
+.custom {
+    font-size: 1.5rem;
 }
 
 /* Menu Toggle */
@@ -85,7 +89,7 @@ nav {
 }
 
 #title {
-    font-size: 200%;
+    font-size: 2.5rem;
     line-height: 75px;
 }
 
@@ -124,51 +128,54 @@ main {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    color: #D1462F;
+    color: #fafafa;
     text-transform: uppercase;
 }
 
 #ul-reasons {
-    margin-top: 0px;
+    margin-top: 20px;
     padding: 20px;
     text-align: justify;
     line-height: 15px;
 }
 
-
+#ul-reasons div {
+    margin-top: 10px;
+}
 
 #ul-reasons h3 {
-    font-size: 15px;
-    color: #D1462F;
+    font-size: 1.1rem;
+    color: #fafafa;
+    ;
 }
 
 #ul-reasons p {
-    font-size: 10px;
+    font-size: 1rem;
     color: white;
 }
 
 #ul-reasons hr {
-    margin: 2px 0;
+    max-width: 99%;
+    margin: 5px 0;
     border-color: #888e2d;
 }
 
 #circle-man-fish {
-    display: flex;
-    justify-content: center;
-    height: 80px;
-    width: 80px;
+    height: 80vw;
+    width: 80vw;
     background: url("../images/mancarp2.jpg") no-repeat top center / cover;
     margin-bottom: 20px;
     /* to make it a circle */
     border-radius: 50%;
-    
-    
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #places-to-fish {
     background: url(../images/fishingOffJetty.jpg) no-repeat center / cover;
     display: flex;
-    max-width: auto;
     flex-wrap: wrap;
 }
 
@@ -207,7 +214,6 @@ footer {
 @media screen and (min-width: 768px) {
 
     /* Header */
-
     nav {
         display: block;
         position: relative;
@@ -217,9 +223,13 @@ footer {
         letter-spacing: 2px;
     }
 
+    .custom {
+        font-size: 2rem;
+    }
+
     header,
     h1 {
-        font-size: 3vw;
+        font-size: 3rem;
     }
 
     #options>li {
@@ -228,42 +238,35 @@ footer {
         letter-spacing: 2px;
     }
 
-
     .nav-menu-label {
         display: none;
     }
-   
+
     #ul-reasons h3 {
         font-size: 20px;
-        
+        letter-spacing: 2px;
     }
 
-    #ul-reasons- p {
+    #ul-reasons p {
         font-size: 15px;
-        
-    }  
-
-    #desktop-position  {
-        display: flex;
-        flex-direction: row;
+        letter-spacing: 1px;
     }
 
-    #free-unwind-,
+    #ul-reasons,
+    hr {
+        margin-bottom: 2px;
+    }
+
+    #free-unwind,
     #relax-catch-fish {
         display: flex;
-        flex-direction: row;
-        max-width: auto;
+        flex-direction: column;
+        width: 100%;
     }
 
-    #free-unwind {
-        text-align: left;
-        align-items: flex-start;
-
-    }
-
+    #free-unwind,
     #relax-catch-fish {
-        text-align: right;
-        align-items: flex-end;
+        width: auto;
     }
 
     #middle-content {
@@ -272,7 +275,6 @@ footer {
 
     /* Media Quiery for laptops and Desktops, over 992px */
     @media screen and (min-width: 992px) {
-
         #options>li:hover {
             color: rgb(136, 142, 45);
             background-color: rgb(40, 75, 99);
@@ -285,41 +287,5 @@ footer {
             background-color: rgb(40, 75, 99);
             padding: 5px;
         }
-
-
-    }
-
-    /* flexbox properties to style the reasons section at 1200px or over*/
-    @media screen and (min-width: 1200px) {
-
-        header,
-        h1 {
-            font-size: 1.4vw;
-        }
-
-        #middle-content-section {
-            margin-top: 6%;
-            margin-bottom: 6%;
-            
-        }
-
-        #desktop-position {
-            display: flex;
-            flex-direction: row;
-         }   
-
-        #relax-catch-fish {
-            order: 1;
-        }
-
-
-
-
-
-
-
-
-
-
     }
 }
