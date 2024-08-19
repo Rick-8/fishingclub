@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Goldman:wght@400;700&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Goldman:wght@400;700&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700&1,300;1,400;1,500;1,700&display=swap');
 
-/* Wildcard selector to override the defult browser setting */
+/* Wildcard selector to override the default browser setting */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* basic project styles */
     color: black;
     background-color: rgb(40, 75, 99);
     font-size: 100%;
@@ -29,7 +28,7 @@ body {
     display: none;
 }
 
-/* header */
+/* Header */
 header {
     background-color: rgb(136, 142, 45);
     display: flex;
@@ -40,70 +39,99 @@ header {
     z-index: 99;
     width: 100%;
     height: auto;
+    position: relative;
 }
 
-/* Header styling */
-header,
-h1 {
+header h1 {
     font-family: "ubuntu", sans-serif;
     font-size: 2.3rem;
     padding: 0.7rem 0.1rem;
-    justify-content: space-between;
 }
 
-header,
-a {
+header a {
     text-decoration: none;
     color: inherit;
 }
 
-#options {
-    font-size: 2rem;
-    letter-spacing: 4px;
-    list-style-type: none;
+.nav-menu-checkbox {
+    display: none;
 }
 
-#options>li {
-    margin-bottom: 1em;
+.nav-menu-label {
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1000;
 }
 
 /* Navbar styling with menu */
 nav {
-    position: absolute;
     background-color: rgb(136, 142, 45);
     width: 100%;
     padding: 0 1rem;
-    left: 0;
-    box-shadow: 0 2px 2px;
     display: none;
+    position: absolute;
     top: 100%;
+    /* Position it right below the header */
+    left: 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Menu Toggle */
-#nav-menu:checked~nav {
-    display: block;
+#options {
+    list-style-type: none;
+    padding: 1rem 0;
+    margin: 0;
+    text-align: center;
 }
 
-.custom {
+#options li {
+    margin: 1rem 0;
     font-size: 1.5rem;
 }
 
-#title {
-    font-size: 2.5rem;
-    line-height: 75px;
+#options a {
+    color: white;
+    text-decoration: none;
 }
 
-#nav-menu {
-    display: none;
-    font-size: 20px;
+/* Show menu when checkbox is checked */
+.nav-menu-checkbox:checked+.nav-menu-label+nav {
+    display: block;
 }
 
 /* Main */
 main {
-    /* to push the footer top the bottom of the page */
+    /* to push the footer to the bottom of the page */
     flex: 1 0 auto;
 }
 
+/* Media Query for Tablets and larger */
+@media screen and (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+        letter-spacing: 2px;
+        top: auto;
+        left: auto;
+    }
+
+    .nav-menu-label {
+        display: none;
+    }
+    #options {
+        display: flex;
+        align-items: baseline;
+        list-style-type: none;
+        padding: 1rem 1rem;
+        margin: 0;
+        gap: 1rem;
+        
+    }
+}
+
+/* Additional Styling for Content and Footer (as per your original design) */
 #main {
     background: url(../images/lake-with-boats.jpeg) no-repeat center center/cover;
     width: 100%;
@@ -146,7 +174,7 @@ main {
 #ul-reasons h3 {
     font-size: 1.1rem;
     color: #fafafa;
-    padding-top: 8px;
+    padding-top: 10px;
 }
 
 #ul-reasons p {
@@ -165,8 +193,6 @@ main {
     width: 80vw;
     background: url("../images/mancarp2.jpg") no-repeat top center / cover;
     margin-bottom: 20px;
-
-    /* Makes it a circle */
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
@@ -194,7 +220,6 @@ main {
     color: white;
 }
 
-/* Footer */
 #social-media {
     text-align: center;
     width: 100%;
@@ -211,85 +236,18 @@ footer {
     background-color: rgb(136, 142, 45);
 }
 
-/* Media Query for Tablets and larger */
-@media screen and (min-width: 768px) {
-
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
+/* Hover effects for larger screens */
+@media screen and (min-width: 992px) {
+    #options>li:hover {
+        color: rgb(136, 142, 45);
+        background-color: rgb(40, 75, 99);
         letter-spacing: 2px;
+        padding: 5px;
     }
 
-    .custom {
-        font-size: 2rem;
-    }
-
-    header,
-    h1 {
-        font-size: 3rem;
-    }
-
-    #options>li {
-        padding-left: 1rem;
-        display: inline;
-        letter-spacing: 2px;
-    }
-
-    .nav-menu-label {
-        display: none;
-    }
-
-    #ul-reasons h3 {
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-    #ul-reasons p {
-        font-size: 15px;
-        letter-spacing: 1px;
-    }
-
-    #ul-reasons,
-    hr {
-        margin-bottom: 2px;
-    }
-
-    #free-unwind,
-    #relax-catch-fish {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #free-unwind,
-    #relax-catch-fish {
-        width: auto;
-    }
-
-    #middle-content {
-        font-size: 160%;
-    }
-#main {
-   height: 600px; 
-}
-
-    /* Media Quiery for laptops and Desktops, over 992px */
-    @media screen and (min-width: 992px) {
-        #options>li:hover {
-            color: rgb(136, 142, 45);
-            background-color: rgb(40, 75, 99);
-            letter-spacing: 2px;
-            padding: 5px;
-        }
-
-        a:hover {
-            color: rgb(136, 142, 45);
-            background-color: rgb(40, 75, 99);
-            padding: 5px;
-        }
+    a:hover {
+        color: rgb(136, 142, 45);
+        background-color: rgb(40, 75, 99);
+        padding: 5px;
     }
 }
