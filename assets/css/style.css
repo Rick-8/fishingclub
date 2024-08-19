@@ -79,13 +79,13 @@ nav {
     top: 100%;
 }
 
-.custom {
-    font-size: 1.5rem;
-}
-
 /* Menu Toggle */
 #nav-menu:checked~nav {
     display: block;
+}
+
+.custom {
+    font-size: 1.5rem;
 }
 
 #title {
@@ -146,7 +146,7 @@ main {
 #ul-reasons h3 {
     font-size: 1.1rem;
     color: #fafafa;
-    ;
+    padding-top: 8px;
 }
 
 #ul-reasons p {
@@ -165,7 +165,8 @@ main {
     width: 80vw;
     background: url("../images/mancarp2.jpg") no-repeat top center / cover;
     margin-bottom: 20px;
-    /* to make it a circle */
+
+    /* Makes it a circle */
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
@@ -272,6 +273,9 @@ footer {
     #middle-content {
         font-size: 160%;
     }
+#main {
+   height: 600px; 
+}
 
     /* Media Quiery for laptops and Desktops, over 992px */
     @media screen and (min-width: 992px) {
