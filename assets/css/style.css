@@ -115,12 +115,31 @@ main {
     height: 100%;
     width: 300%;
     object-fit: cover;
-    
+
 }
+
 .IMG-vii {
     max-width: 270px;
 }
 
+
+/* Sign up stying */
+#sign-up-main {
+    background: url(/assets/images/sign-up.jpg) no-repeat bottom center/cover;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+#enquiries {
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+#sign-up-title {
+padding: 5px;
+color: white;
+}
 
 
 
@@ -158,8 +177,9 @@ main {
         justify-content: center;
         flex-wrap: wrap;
         gap: 3px;
- 
+
     }
+
     .IMG-vii {
         min-width: 540px;
     }
