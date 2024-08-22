@@ -125,9 +125,9 @@ main {
 
 /* Sign up stying */
 #sign-up-main {
-    background: url(assets/images/sign-up.jpg) no-repeat bottom center/cover;
+    background: url(../images/sign-up.jpg) no-repeat center center/cover;
     width: 100%;
-    height: 900px;
+    height: 675px;
     position: relative;
 
 }
@@ -135,7 +135,8 @@ main {
 #enquiries {
     background-color: rgba(0, 0, 0, .6);
     width: 100%;
-    height: 900px;
+    height: 675px;
+    
 }
 
 .sign-up-title {
@@ -180,6 +181,13 @@ main {
 #enter-details input {
     border-color: black;
     padding-top: 1px;
+}
+.fish-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+
 }
 
 
@@ -226,17 +234,25 @@ main {
 
     /* styling for the enquiries/signup page */
 
+    #sign-up-main {
+        background: url(../images/sign-up.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 800px;
+        position: relative;
+    
+    }
+
     #enquiries {
         background-color: rgba(0, 0, 0, .6);
         width: 100%;
-        height: 900px;
+        height: 800px;
     }
 
     .sign-up-title {
         color: white;
     }
 
-    #open-times>a {
+    #open-times, a {
         color: white;
         text-decoration: underline;
     }
@@ -262,6 +278,7 @@ main {
         background-color: rgba(136, 142, 45, .6);
         padding: 30px;
     }
+ 
 
 }
 
@@ -392,4 +409,8 @@ footer a {
         background-color: rgb(40, 75, 99);
 
     }
+    .fish-button:hover {
+        color: rgb(136, 142, 45);
+        background-color: rgb(40, 75, 99);
+        font-weight: bold;
 }
