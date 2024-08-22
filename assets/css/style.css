@@ -27,6 +27,7 @@ body {
 .hidden-title {
     display: none;
 }
+
 .hidden-heading {
     display: none;
 }
@@ -107,6 +108,21 @@ main {
     flex: 1 0 auto;
 }
 
+/* Club Photo's page styling */
+#fish-photo {
+    width: 100%;
+    height: 100%;
+    line-height: 1em;
+}
+
+#club-photo {
+    height: 100%;
+    width: 100%;
+    columns: 1;
+}
+
+
+
 /* Media Query for Tablets and larger */
 @media screen and (min-width: 768px) {
     nav {
@@ -133,11 +149,12 @@ main {
         gap: 1rem;
 
     }
+
 }
 
 /* Additional Styling for Content and Footer */
 #main {
-    background: url(../images/lake-with-boats.jpeg) no-repeat center center/cover;
+    background: url(../images/lake-with-boats.png) no-repeat bottom center/cover;
     width: 100%;
     height: 300px;
     position: relative;
@@ -242,6 +259,10 @@ footer {
 
 footer a {
     color: black;
+}
+
+#club-photo {
+    column-count: 4;
 }
 
 /* Hover effects for larger screens */
