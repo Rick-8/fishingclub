@@ -156,12 +156,13 @@ main {
     background-color: rgba(136, 142, 45, .6);
     padding: 20px;
 }
-#enquiries-title h2 {
 
+#enquiries-title h2 {
+    padding: 5px 0;
 }
 
 #enquiries-title p {
-
+    padding: 5px 0;
 }
 
 #enter-details {
@@ -175,9 +176,10 @@ main {
     background-color: rgba(136, 142, 45, .6);
     padding: 30px;
 }
+
 #enter-details input {
-border-color: black;
-padding-top: 1px;
+    border-color: black;
+    padding-top: 1px;
 }
 
 
@@ -229,16 +231,16 @@ padding-top: 1px;
         width: 100%;
         height: 900px;
     }
-    
+
     .sign-up-title {
         color: white;
     }
-    
+
     #open-times>a {
         color: white;
         text-decoration: underline;
     }
-    
+
     #enquiries-title {
         color: white;
         position: absolute;
@@ -247,9 +249,9 @@ padding-top: 1px;
         max-width: 60%;
         background-color: rgba(136, 142, 45, .6);
         padding: 20px;
-    
+
     }
-    
+
     #enter-details {
         color: white;
         position: absolute;
