@@ -109,17 +109,20 @@ main {
 }
 
 /* Club Photo's page styling */
-#fish-photo {
-    width: 100%;
+#club-photo {
+    display: flex;
+    justify-content: center;
     height: 100%;
-    line-height: 1em;
+    width: 300%;
+    object-fit: cover;
+    
+}
+.IMG-vii {
+    max-width: 270px;
 }
 
-#club-photo {
-    height: 100%;
-    width: 100%;
-    columns: 1;
-}
+
+
 
 
 
@@ -149,6 +152,19 @@ main {
         gap: 1rem;
 
     }
+
+    #club-photos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3px;
+ 
+    }
+    .IMG-vii {
+        min-width: 540px;
+    }
+
+
 
 }
 
@@ -271,12 +287,12 @@ footer a {
         color: rgb(136, 142, 45);
         background-color: rgb(40, 75, 99);
         letter-spacing: 2px;
-        padding: 5px;
+
     }
 
     a:hover {
         color: rgb(136, 142, 45);
         background-color: rgb(40, 75, 99);
-        padding: 5px;
+
     }
 }
