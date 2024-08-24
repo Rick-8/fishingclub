@@ -80,4 +80,10 @@ I ran my page through Lighthouse to ensure my site is easy to read an nicely acc
 - I tested my site on Chrome, Safari and Firefox, and it works well on these browsers.
 - I tested all links on pages to make sure they were working
 - I tested all external links to make sure they work, and link in a separate tab to the correct site.
-- I tested that the form and it works 
+- I tested that the form works, and submits the all the information correctly.
+
+![Screenshot of the websites homepage on different devices](assets/images/form-submit.png) 
+
+* HTML 
+
+  - I ran the code through the checker and found no errors
