@@ -8,6 +8,9 @@ Users of the site will instantly be aware on the page opening up, what they are 
 
 ## Features
 
+* Favicon
+  - using the site Favomatic (https://favicomatic.com/) I was able to make my own Favicon from a cropped picture I sourced from pexels.com
+
 * Navigation Bar
 
     - Shown at the top of all three pages, and each page having an identical theme.
@@ -92,12 +95,38 @@ I ran my page through Lighthouse to ensure my site is easy to read an nicely acc
   
   ![Screenshot of the websites homepage on different devices](assets/images/tel-type-browser.png) 
  
- * CSS
- - No errors were found when the code was run through the CSS validator 
+* CSS
+  - No errors were found when the code was run through the CSS validator 
 
   ![Screenshot of the websites homepage on different devices](assets/images/css-validation.png)
 
 ## Bugs
   - being my first ever page, there were a few bugs, and "opertunities to learn" along the way, which I spent time reaserching and spoke to tutor support for help and advice a could of times. but to name a couple,
   - getting the pics on the pictures page to fit toghter nicely was a challenge, but after speaking with a tutor and my mentor I discovered that the picture sizes were very big, and needed scaling down, which I was able to do easily using the windows paint function, and using flex-box got them lined up nicely.
-- 
+  - There were various minor errors, that I was quickly able to discover, because I was running my code through both validator services at periodic points, correcting things using the correct heading tags in the expected places, correctly spacing the content out.
+  - The imgage for the sign up page was fixed, and not relative and did not load when deployed. This was easily fix and a bux fit update done, upon discovering it.
+
+
+# Deployment
+
+* Version Control
+
+  - The site was created using the Gitpod editor and pushed to the remote fishing club repository on Github.com
+  - Git commands were used reguraly during the construction of the club website using the following Git commands
+  - git add .  - to add files to the staging area before being commited
+  - git commit -m "commit title" - to commit a file to the queue ready for the final process.
+  - git push - used to send the comitted files to the Github repository.
+
+* Deployment to Github pages
+
+  - I used the follwing steps to deploy using the Github pages as follows
+  - Once inside the repository, I clicked on the settings tab
+  - I then went to the pages section
+  - Making sure the main branch was selected I then clicked on save and the page url was created.
+  - Please click here to find the live site [BDA Fishing](https://rick-8.github.io/fishingclub/)
+
+* Using Gitpod
+
+  - To set up my working IDE I loged in to Gitpod and navigated to the workspaces section
+  - Clicking on new workspace and in putting the repository url, 
+  - The IDE was created.
