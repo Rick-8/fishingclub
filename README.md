@@ -151,5 +151,12 @@ I ran my page through Lighthouse to ensure my site is easy to read an nicely acc
  - The social media links in the footer, are the real logo's from You Tube, Facebook and Instagram.
  - The favicon used for this website was created from a Picture of a float in the water taken from [pexels.com](https://www.pexels.com/) Croped and uploaded to [favomatic](https://favicomatic.com/) which made me a full free set, this was then uploaded to gitpod, and implimented into my project.
  
+### Media
 
+ - The Images listed below were sourced from [pexels.com](https://www.pexels.com/) 
+  - All 3 pictures on The Index / Landing page
+  - Three pictures from the club photos page 
+  - The background picture on the Enquires page
+  - 6 of the photos were taken from my private collection, (made for this project by myself)
+  
 
