@@ -107,7 +107,7 @@ I ran my page through Lighthouse to ensure my site is easy to read an nicely acc
   - The imgage for the sign up page was fixed, and not relative and did not load when deployed. This was easily fix and a bux fit update done, upon discovering it.
 
 
-# Deployment
+## Deployment
 
 * Version Control
 
@@ -130,3 +130,26 @@ I ran my page through Lighthouse to ensure my site is easy to read an nicely acc
   - To set up my working IDE I loged in to Gitpod and navigated to the workspaces section
   - Clicking on new workspace and in putting the repository url, 
   - The IDE was created.
+
+## Design - Wireframes
+
+ - Making the site I used the mobile first method in developing. I used [wireframe](https://balsamiq.com/) to plot a general layout both on Mobile first and being responsive on bigger screens.
+
+* Mobile screens from 280px
+  - ![Screenshot of the websites homepage on different devices](assets/images/wireframes-android.png)
+
+ * Larger screens with a min-width of 768px
+  - ![Screenshot of the websites homepage on different devices](assets/images/wireframes-desktop.png)
+
+
+## Credits
+- I would like give a special thank you to my mentor for his help and support.
+- I would also like to credit the Love Running project walkthrough, for inspiration on the layout of the header, footer and basic page design.
+
+### Content
+ - The Icons in the header, footer and on some heading titles were imported from [Font Awsome](https://fontawesome.com/)
+ - The social media links in the footer, are the real logo's from You Tube, Facebook and Instagram.
+ - The favicon used for this website was created from a Picture of a float in the water taken from [pexels.com](https://www.pexels.com/) Croped and uploaded to [favomatic](https://favicomatic.com/) which made me a full free set, this was then uploaded to gitpod, and implimented into my project.
+ 
+
+
