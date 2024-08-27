@@ -4,13 +4,24 @@ BDA Fishing website is for people that want to fish, shop or relax around the la
 
 Users of the site will instantly be aware on the page opening up, what they are looking for with a simple and easy layout to navigate pages. it has 3 sections aimed at providing users with BDA Fishing information, the community who fish and use the waters, and how anyone can leave their details for a club member to contact them to provide legendary customer service.
 
+* Target Audience 
+  - The BDA webpage is aimed mainly at people wanting to fish, find the shop or join the club aswell. Enabling the user the opportunity to find information on the clubs waters, enquire to join, and how they can do this. It also by association could appeal to dog walkers, or simply those who enjoy going for a stroll and enjoy the scenery.
+
+* Project Goal
+  - My primary goal was to provide information on the club, its available waters, and the benefits of fishing. It would appeal to potential new members, and provide and strong reference point for existing users. 
+  -	This website holds a lot of further development opportunities to further increase its allure, and usefulness to both new and existing users. which I have detailed below [go to Future Features](#future-features)
+
+
+
+
 ![Screenshot of the websites homepage on different devices](assets/images/multi-screen-mock2.jpg) 
 
 ## Features
 
 * Favicon
-  - using the site [Favomatic](https://favicomatic.com/) I was able to make my own Favicon from a cropped picture I sourced from [pexels.com](https://www.pexels.com/) 
-
+  - using the site [Favomatic](https://favicomatic.com/) I was able to make my own Favicon from a cropped picture I sourced from [pexels.com](https://www.pexels.com/)
+  - [Go to code (opens in another window)](index.html#title>)
+  - [go to Content below](#content)
 
 * Navigation Bar
     - always in the top right corner on the screen, and has 2 styles depending on real-estate size.
@@ -61,7 +72,7 @@ Users of the site will instantly be aware on the page opening up, what they are 
 
 ![Screenshot of the websites homepage on different devices](assets/images/signup-page-p1.png) 
 
-### Features left to implement
+## future features 
 
  - I would love to add maps of the waters to aid in the allure of joining the club and assist members in finding the right spot.
  - I would also like to add another page for a club shop, selling bait and tackle and club merchandise online, including new memberships with an online pay section.
@@ -138,7 +149,7 @@ I ran my page through Lighthouse to ensure my site is easy to read and nicely ac
 - I would like give a special thank you to my mentor for his help and support.
 - I would also like to credit the Love Running project walkthrough, for inspiration on the layout of the header, footer and basic page design.
 
-### Content
+## content
  - The Icons in the header, footer and on some heading titles were imported from [Font Awesome](https://fontawesome.com/)
  - The social media links in the footer, are the real logos from You Tube, Facebook and Instagram.
  - The favicon used for this website was created from a Picture of a float in the water taken from [pexels.com](https://www.pexels.com/) it was then, Cropped and uploaded to [favomatic](https://favicomatic.com/) website, which made me a full free set. This was then uploaded to gitpod, and implemented into my project.
